@@ -17,6 +17,6 @@ apt-get install -y ansible &>/dev/null
 sed -i s/"#host_key_checking = False"/"host_key_checking = False"/g /etc/ansible/ansible.cfg
 echo "Host kay has been disabled in ansible"
 
-ansible_version=$(ansible --version | grep "ansible " | awk '{ print $2 }')
+ansible_version=$(ansible --version | grep "^ansible " | awk '{ print $2 }')
 
 echo "Ansible installation completed with version:- $ansible_version"
