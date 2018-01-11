@@ -10,7 +10,7 @@ echo -e "Apt repository added to the system\n$repo_details"
 apt-get update -y &>/dev/null
 echo "Apt repository updated"
 
-#Install latest version of Ansible
+# Install latest version of Ansible
 apt-get install -y ansible &>/dev/null
 
 #Diasable host key checking
